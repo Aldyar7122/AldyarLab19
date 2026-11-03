@@ -1,0 +1,20 @@
+* 16c9feb (HEAD -> main, tag: v1.0.0) Record passing tests, static analysis and real demonstration outputs
+* b5b629b Add reproducible demonstration and exact console API reference
+* b2a170e Make audit failures return a nonzero console status and fix lint scope
+* 80fe6ef Normalize Python formatting and remove unused imports
+* 395695c Add Kazakh installation, usage and verification guide
+* 7a1ba9e Configure Python 3.11 and 3.12 automated quality checks
+*   ecc41ce Merge configuration management plan
+|\  
+| * e79fd63 (feature-scmp) Document baseline approval, change control and release responsibilities
+|/  
+*   8ca9b65 Merge feature-evidence
+|\  
+| * 7f2822d (feature-evidence) Test traceability normal, invalid and persistent scenarios
+| * 4ff70ed Expose traceability actions through validated console interface
+|/  
+*   f32c052 Merge feature-registry
+|\  
+| * dc3b1b7 (feature-registry) Implement traceability persistence and validation
+|/  
+* 0372d15 Initialize installable Python project and pinned tooling

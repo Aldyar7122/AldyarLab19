@@ -1,0 +1,23 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\User\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Практика_19_20\09-scm-traceability
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 13 items
+
+tests/test_traceability.py::test_item_registration PASSED                [  7%]
+tests/test_traceability.py::test_version_change PASSED                   [ 15%]
+tests/test_traceability.py::test_approval PASSED                         [ 23%]
+tests/test_traceability.py::test_rejection PASSED                        [ 30%]
+tests/test_traceability.py::test_unapproved_change PASSED                [ 38%]
+tests/test_traceability.py::test_baseline_valid PASSED                   [ 46%]
+tests/test_traceability.py::test_baseline_detects_change PASSED          [ 53%]
+tests/test_traceability.py::test_missing_file PASSED                     [ 61%]
+tests/test_traceability.py::test_chain PASSED                            [ 69%]
+tests/test_traceability.py::test_incomplete_chain PASSED                 [ 76%]
+tests/test_traceability.py::test_matrix PASSED                           [ 84%]
+tests/test_traceability.py::test_report PASSED                           [ 92%]
+tests/test_traceability.py::test_release PASSED                          [100%]
+
+============================= 13 passed in 1.62s ==============================

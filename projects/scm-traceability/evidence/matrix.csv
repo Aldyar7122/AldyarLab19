@@ -1,0 +1,8 @@
+﻿process,scmp,function,test,evidence,status,limitation
+Identification,SCMP 3,item/items,test_item_registration,items + item_versions,implemented,content hashes; no binary artifact repository
+Change control,SCMP 4,request/decide/apply,test_unapproved_change,requests + history,partial,"local approver role, no authentication or separation of duties"
+Baseline,SCMP 5,baseline/verify,test_baseline_detects_change,baselines + verification.json,implemented,SQLite triggers do not protect against a database administrator
+Status accounting,SCMP 6,chains/report,test_chain,traceability.json,implemented,"test identifiers are references, not signed attestations"
+Audit,SCMP 7,audit/verify,test_incomplete_chain,audit.json,partial,"internal checks only, no independent external audit"
+Release,SCMP 8,release,test_release,releases + Git tag,partial,release registry; no production deployment
+Formal certification,SCMP 1,none,not applicable,scope statement,not implemented,out of scope
