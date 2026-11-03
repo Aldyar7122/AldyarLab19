@@ -1,0 +1,14 @@
+{
+  "baseline": "BL-001",
+  "compared_to": "BL-002",
+  "time": "2026-11-03T14:38:24.642373+00:00",
+  "added": [
+    "new.txt"
+  ],
+  "removed": [
+    "obsolete.txt"
+  ],
+  "changed": [
+    "app.txt"
+  ]
+}

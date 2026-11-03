@@ -1,0 +1,24 @@
+{
+  "id": "BL-002",
+  "date": "2026-11-03T14:38:24.626748+00:00",
+  "approver": "Reviewer",
+  "commit_hash": "9532b4570e0c149dbc2fe7c3127fe1dc4297dc58",
+  "previous": "BL-001",
+  "exclude": [],
+  "items": [
+    {
+      "id": "CI-62d0a0ae9313",
+      "path": "app.txt",
+      "size": 11,
+      "version": "a67d5f465425",
+      "sha256": "a67d5f46542514f52d658493fc9405829d2922cf1647574c838b6b86f125477a"
+    },
+    {
+      "id": "CI-11f8ad13b4f8",
+      "path": "new.txt",
+      "size": 5,
+      "version": "279b8a60f444",
+      "sha256": "279b8a60f444fa8b6275687ce7e44363d97f72f88e4a3285baf0d9ed812e4061"
+    }
+  ]
+}
