@@ -1,0 +1,19 @@
+* bf40065 (HEAD -> main, tag: v1.0.0) Record passing tests, static analysis and real demonstration outputs
+* e2e4dae Add reproducible demonstration and exact console API reference
+* 58d6837 Make audit failures return a nonzero console status and fix lint scope
+* fe1c8ca Normalize Python formatting and remove unused imports
+* 6a10002 Add Kazakh installation, usage and verification guide
+*   468f4b8 Merge configuration management plan
+|\  
+| * 88555e2 (feature-scmp) Document baseline approval, change control and release responsibilities
+|/  
+*   635fd8e Merge feature-report
+|\  
+| * a3bf86d (feature-report) Test changes normal, invalid and persistent scenarios
+| * 058dcb5 Expose changes actions through validated console interface
+|/  
+*   abf15a1 Merge feature-changes
+|\  
+| * 20249e8 (feature-changes) Implement changes persistence and validation
+|/  
+* 53a5d51 Initialize installable Python project and pinned tooling
