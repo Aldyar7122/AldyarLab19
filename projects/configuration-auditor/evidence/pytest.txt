@@ -1,0 +1,26 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\User\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Практика_19_20\07-configuration-auditor
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 16 items
+
+tests/test_auditor.py::test_compliant PASSED                             [  6%]
+tests/test_auditor.py::test_missing_file[README.md] PASSED               [ 12%]
+tests/test_auditor.py::test_missing_file[CHANGELOG.md] PASSED            [ 18%]
+tests/test_auditor.py::test_missing_file[pyproject.toml] PASSED          [ 25%]
+tests/test_auditor.py::test_missing_ci PASSED                            [ 31%]
+tests/test_auditor.py::test_invalid_version PASSED                       [ 37%]
+tests/test_auditor.py::test_corrupt_toml PASSED                          [ 43%]
+tests/test_auditor.py::test_commits PASSED                               [ 50%]
+tests/test_auditor.py::test_missing_git PASSED                           [ 56%]
+tests/test_auditor.py::test_corrupt_rules PASSED                         [ 62%]
+tests/test_auditor.py::test_wrong_rules[value0] PASSED                   [ 68%]
+tests/test_auditor.py::test_wrong_rules[value1] PASSED                   [ 75%]
+tests/test_auditor.py::test_wrong_rules[value2] PASSED                   [ 81%]
+tests/test_auditor.py::test_wrong_rules[value3] PASSED                   [ 87%]
+tests/test_auditor.py::test_html_escape PASSED                           [ 93%]
+tests/test_auditor.py::test_reports PASSED                               [100%]
+
+============================= 16 passed in 7.25s ==============================
