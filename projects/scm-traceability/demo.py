@@ -37,6 +37,8 @@ after = app.verify("BL-001", data)
 app.release("P1", "1.0.0", "BL-001")
 result = {"chain_audit": app.audit(evidence / "traceability.json"), "before": before, "after": after}
 put_json(evidence / "matrix.json", app.matrix())
+put_json(evidence / "verification.json", {"before": before, "after": after})
+put_json(evidence / "audit.json", result["chain_audit"])
 columns = ["process", "scmp", "function", "test", "evidence", "status", "limitation"]
 with (evidence / "matrix.csv").open("w", encoding="utf-8-sig", newline="") as stream:
     writer = csv.DictWriter(stream, fieldnames=columns)

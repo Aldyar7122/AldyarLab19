@@ -1,0 +1,588 @@
+{
+  "projects": [
+    {
+      "number": 1,
+      "name": "file-version-manager",
+      "tests": 12,
+      "commits": 15,
+      "branches": 4,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\01-file-version-manager"
+    },
+    {
+      "number": 2,
+      "name": "change-tracker",
+      "tests": 9,
+      "commits": 15,
+      "branches": 4,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\02-change-tracker"
+    },
+    {
+      "number": 3,
+      "name": "configuration-scanner",
+      "tests": 13,
+      "commits": 15,
+      "branches": 4,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\03-configuration-scanner"
+    },
+    {
+      "number": 4,
+      "name": "task-manager",
+      "tests": 11,
+      "commits": 20,
+      "branches": 6,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\04-task-manager"
+    },
+    {
+      "number": 5,
+      "name": "warehouse-ci",
+      "tests": 16,
+      "commits": 16,
+      "branches": 4,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\05-warehouse-ci"
+    },
+    {
+      "number": 6,
+      "name": "release-manager",
+      "tests": 18,
+      "commits": 17,
+      "branches": 4,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\06-release-manager"
+    },
+    {
+      "number": 7,
+      "name": "configuration-auditor",
+      "tests": 16,
+      "commits": 16,
+      "branches": 4,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\07-configuration-auditor"
+    },
+    {
+      "number": 8,
+      "name": "scm-platform",
+      "tests": 25,
+      "commits": 25,
+      "branches": 8,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\08-scm-platform"
+    },
+    {
+      "number": 9,
+      "name": "scm-traceability",
+      "tests": 14,
+      "commits": 18,
+      "branches": 4,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\09-scm-traceability"
+    }
+  ],
+  "total_tests": 134,
+  "failure_commit": "cf17ce29f47a9a8c8ee24dfb79e6a30da73af809",
+  "fix_commit": "7e14d0cb016a9a3659f0ace5a5902b73e927319e",
+  "pulls": [
+    {
+      "number": 1,
+      "url": "https://github.com/Aldyar7122/AldyarLab19/pull/1",
+      "branch": "feature/scm-approval-regressions",
+      "sha": "f64dc25080c141230846eecbbec5899d901f4f38",
+      "merged": true,
+      "merge_commit": "8b45077ee4f0f772df86622b40587838e74ad1e2"
+    },
+    {
+      "number": 2,
+      "url": "https://github.com/Aldyar7122/AldyarLab19/pull/2",
+      "branch": "feature/scm-baseline-deletion-test",
+      "sha": "9302d4f735218f32a70a4f0b5d22f6846e61efb2",
+      "merged": true,
+      "merge_commit": "16a7d128d9c9b518fc99bfda25c7bcc4c50c7d90"
+    }
+  ],
+  "failed_ci": {
+    "id": 41655869782,
+    "name": "All assignments CI",
+    "event": "push",
+    "head_branch": "demo/warehouse-ci-failure",
+    "head_sha": "cf17ce29f47a9a8c8ee24dfb79e6a30da73af809",
+    "status": "completed",
+    "conclusion": "failure",
+    "html_url": "https://github.com/Aldyar7122/AldyarLab19/actions/runs/41655869782",
+    "jobs": [
+      {
+        "name": "test (3.12)",
+        "conclusion": "failure",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python -m pip install -r requirements-dev.txt",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python scripts/check_all.py",
+            "conclusion": "failure"
+          },
+          {
+            "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "test (3.11)",
+        "conclusion": "failure",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python -m pip install -r requirements-dev.txt",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python scripts/check_all.py",
+            "conclusion": "failure"
+          },
+          {
+            "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "fixed_ci": {
+    "id": 41656030137,
+    "name": "All assignments CI",
+    "event": "push",
+    "head_branch": "demo/warehouse-ci-failure",
+    "head_sha": "7e14d0cb016a9a3659f0ace5a5902b73e927319e",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/Aldyar7122/AldyarLab19/actions/runs/41656030137",
+    "jobs": [
+      {
+        "name": "test (3.12)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python -m pip install -r requirements-dev.txt",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python scripts/check_all.py",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "test (3.11)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python -m pip install -r requirements-dev.txt",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python scripts/check_all.py",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "failed_release": {
+    "id": 41655872432,
+    "name": "Release package",
+    "event": "push",
+    "head_branch": "v9.9.9",
+    "head_sha": "ca262a9de406dc7247a599efa39726e65895008b",
+    "status": "completed",
+    "conclusion": "failure",
+    "html_url": "https://github.com/Aldyar7122/AldyarLab19/actions/runs/41655872432",
+    "jobs": [
+      {
+        "name": "build",
+        "conclusion": "failure",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python -m pip install -r requirements-dev.txt",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python -m pip install -e . --no-build-isolation",
+            "conclusion": "success"
+          },
+          {
+            "name": "Validate Git tag before creating any distribution",
+            "conclusion": "failure"
+          },
+          {
+            "name": "Run python -m pytest -v",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Run python -m build --no-isolation",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Run actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "release": {
+    "id": 41657029584,
+    "name": "Release package",
+    "event": "push",
+    "head_branch": "v1.0.0",
+    "head_sha": "16a7d128d9c9b518fc99bfda25c7bcc4c50c7d90",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/Aldyar7122/AldyarLab19/actions/runs/41657029584",
+    "jobs": [
+      {
+        "name": "build",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python -m pip install -r requirements-dev.txt",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python -m pip install -e . --no-build-isolation",
+            "conclusion": "success"
+          },
+          {
+            "name": "Validate Git tag before creating any distribution",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python -m pytest -v",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python -m build --no-isolation",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "main_ci": {
+    "id": 41657230512,
+    "name": "All assignments CI",
+    "event": "push",
+    "head_branch": "main",
+    "head_sha": "1f5f3fb5f139b1ccdeaed437cd0084eb742605be",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/Aldyar7122/AldyarLab19/actions/runs/41657230512",
+    "jobs": [
+      {
+        "name": "test (3.12)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python -m pip install -r requirements-dev.txt",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python scripts/check_all.py",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "test (3.11)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python -m pip install -r requirements-dev.txt",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python scripts/check_all.py",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "pr_ci": {
+    "id": 41656288851,
+    "name": "All assignments CI",
+    "event": "pull_request",
+    "head_branch": "feature/scm-baseline-deletion-test",
+    "head_sha": "9302d4f735218f32a70a4f0b5d22f6846e61efb2",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/Aldyar7122/AldyarLab19/actions/runs/41656288851",
+    "jobs": [
+      {
+        "name": "test (3.11)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python -m pip install -r requirements-dev.txt",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python scripts/check_all.py",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "test (3.12)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python -m pip install -r requirements-dev.txt",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run python scripts/check_all.py",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "artifact": {
+    "id": 13239927649,
+    "name": "release-manager-v1.0.0",
+    "size_in_bytes": 10235,
+    "expired": false
+  },
+  "failed_release_artifacts": 0
+}

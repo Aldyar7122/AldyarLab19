@@ -1,0 +1,17 @@
+{
+  "before": {
+    "baseline": "BL-001",
+    "passed": true,
+    "mismatches": []
+  },
+  "after": {
+    "baseline": "BL-001",
+    "passed": false,
+    "mismatches": [
+      {
+        "item": "CI-001",
+        "reason": "sha256 mismatch"
+      }
+    ]
+  }
+}

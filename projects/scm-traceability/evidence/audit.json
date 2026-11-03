@@ -1,0 +1,83 @@
+{
+  "time": "2026-11-03T14:50:38.044399+00:00",
+  "passed": true,
+  "chains": [
+    {
+      "request": "CR-001",
+      "decision": "Approved after impact analysis",
+      "approver": "Reviewer",
+      "commit": "1f5f3fb5f139b1ccdeaed437cd0084eb742605be",
+      "baselines": [
+        "BL-001"
+      ],
+      "test": "test_chain"
+    }
+  ],
+  "incomplete_requests": [],
+  "matrix": [
+    {
+      "process": "Identification",
+      "scmp": "SCMP 3",
+      "function": "item/items",
+      "test": "test_item_registration",
+      "evidence": "items + item_versions",
+      "status": "implemented",
+      "limitation": "content hashes; no binary artifact repository"
+    },
+    {
+      "process": "Change control",
+      "scmp": "SCMP 4",
+      "function": "request/decide/apply",
+      "test": "test_unapproved_change",
+      "evidence": "requests + history",
+      "status": "partial",
+      "limitation": "local approver role, no authentication or separation of duties"
+    },
+    {
+      "process": "Baseline",
+      "scmp": "SCMP 5",
+      "function": "baseline/verify",
+      "test": "test_baseline_detects_change",
+      "evidence": "baselines + verification.json",
+      "status": "implemented",
+      "limitation": "SQLite triggers do not protect against a database administrator"
+    },
+    {
+      "process": "Status accounting",
+      "scmp": "SCMP 6",
+      "function": "chains/report",
+      "test": "test_chain",
+      "evidence": "traceability.json",
+      "status": "implemented",
+      "limitation": "test identifiers are references, not signed attestations"
+    },
+    {
+      "process": "Audit",
+      "scmp": "SCMP 7",
+      "function": "audit/verify",
+      "test": "test_incomplete_chain",
+      "evidence": "audit.json",
+      "status": "partial",
+      "limitation": "internal checks only, no independent external audit"
+    },
+    {
+      "process": "Release",
+      "scmp": "SCMP 8",
+      "function": "release",
+      "test": "test_release",
+      "evidence": "releases + Git tag",
+      "status": "partial",
+      "limitation": "release registry; no production deployment"
+    },
+    {
+      "process": "Formal certification",
+      "scmp": "SCMP 1",
+      "function": "none",
+      "test": "not applicable",
+      "evidence": "scope statement",
+      "status": "not implemented",
+      "limitation": "out of scope"
+    }
+  ],
+  "limitation": "Commit and test references are registered evidence; remote CI is verified separately."
+}
