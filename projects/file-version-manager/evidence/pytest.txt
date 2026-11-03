@@ -1,0 +1,22 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\User\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Практика_19_20\01-file-version-manager
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 12 items
+
+tests/test_versions.py::test_save PASSED                                 [  8%]
+tests/test_versions.py::test_compare PASSED                              [ 16%]
+tests/test_versions.py::test_restore PASSED                              [ 25%]
+tests/test_versions.py::test_missing_version PASSED                      [ 33%]
+tests/test_versions.py::test_history_preserved PASSED                    [ 41%]
+tests/test_versions.py::test_restart PASSED                              [ 50%]
+tests/test_versions.py::test_invalid_name[../escape] PASSED              [ 58%]
+tests/test_versions.py::test_invalid_name[] PASSED                       [ 66%]
+tests/test_versions.py::test_invalid_name[/absolute] PASSED              [ 75%]
+tests/test_versions.py::test_invalid_name[a/b] PASSED                    [ 83%]
+tests/test_versions.py::test_invalid_name[a\\b] PASSED                   [ 91%]
+tests/test_versions.py::test_duplicate_document PASSED                   [100%]
+
+============================= 12 passed in 0.48s ==============================
