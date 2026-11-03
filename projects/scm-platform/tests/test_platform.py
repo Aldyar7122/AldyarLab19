@@ -156,3 +156,11 @@ def test_duplicate_release_blocked(app):
     app.release("P1", "1.0.0", "BL-001")
     with pytest.raises(ValueError):
         app.release("P1", "1.0.0", "BL-001")
+
+
+def test_content_hash_preserves_newlines(app):
+    import hashlib
+
+    app.item("P1", "CI-002", "other.py", "1.0", "print(3)\n")
+    item = [row for row in app.items("P1") if row["id"] == "CI-002"][0]
+    assert item["sha256"] == hashlib.sha256(b"print(3)\n").hexdigest()

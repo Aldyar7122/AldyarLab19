@@ -56,7 +56,9 @@ class Platform(Database):
 
     def item(self, project, id, path, version, content):
         self._project(project)
-        digest = hashlib.sha256(text(content).encode()).hexdigest()
+        if not isinstance(content, str):
+            raise ValueError("content must be text")
+        digest = hashlib.sha256(content.encode()).hexdigest()
         try:
             with self.db:
                 self.db.execute(
@@ -72,6 +74,8 @@ class Platform(Database):
         return self.rows("SELECT * FROM items WHERE project=? ORDER BY id", (project,))
 
     def request(self, id, project, item, version, content, description):
+        if not isinstance(content, str):
+            raise ValueError("content must be text")
         current = self.rows("SELECT * FROM items WHERE project=? AND id=?", (project, item))
         if not current:
             raise ValueError("item does not exist in project")
@@ -88,7 +92,7 @@ class Platform(Database):
                         project,
                         item,
                         text(version),
-                        hashlib.sha256(text(content).encode()).hexdigest(),
+                        hashlib.sha256(content.encode()).hexdigest(),
                         text(description),
                     ),
                 )
