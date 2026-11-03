@@ -1,0 +1,27 @@
+name: Release package
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/release-manager
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pip install -e . --no-build-isolation
+      - name: Validate Git tag before creating any distribution
+        run: python -m application --store . check_tag tag=${{ github.ref_name }}
+      - run: python -m pytest -v
+      - run: python -m build --no-isolation
+      - uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4
+        with:
+          name: release-manager-${{ github.ref_name }}
+          path: projects/release-manager/dist/*
