@@ -1,0 +1,20 @@
+* d210359 (HEAD -> main, tag: v1.0.0) Record passing tests, static analysis and real demonstration outputs
+* 10f72cd Add reproducible demonstration and exact console API reference
+* b6b9996 Make audit failures return a nonzero console status and fix lint scope
+* de8bfa7 Normalize Python formatting and remove unused imports
+* 67e5d59 Add Kazakh installation, usage and verification guide
+* 28669f8 Configure Python 3.11 and 3.12 automated quality checks
+*   ce1d8ed Merge configuration management plan
+|\  
+| * 49f505d (feature-scmp) Document baseline approval, change control and release responsibilities
+|/  
+*   237e8e9 Merge feature-reports
+|\  
+| * 475173b (feature-reports) Test auditor normal, invalid and persistent scenarios
+| * 80aad2f Expose auditor actions through validated console interface
+|/  
+*   b8d4460 Merge feature-audit
+|\  
+| * c161389 (feature-audit) Implement auditor persistence and validation
+|/  
+* 96742d1 Initialize installable Python project and pinned tooling

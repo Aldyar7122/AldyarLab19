@@ -1,0 +1,31 @@
+{
+  "compliant_passed": true,
+  "noncompliant_passed": false,
+  "noncompliant_findings": [
+    {
+      "rule": "required_files",
+      "severity": "error",
+      "message": "missing README.md"
+    },
+    {
+      "rule": "required_files",
+      "severity": "error",
+      "message": "missing CHANGELOG.md"
+    },
+    {
+      "rule": "version",
+      "severity": "error",
+      "message": "invalid or missing package version: invalid numeric SemVer"
+    },
+    {
+      "rule": "ci",
+      "severity": "error",
+      "message": "missing CI workflow"
+    },
+    {
+      "rule": "git",
+      "severity": "error",
+      "message": "missing Git repository"
+    }
+  ]
+}
