@@ -1,0 +1,21 @@
+* 2fe8be4 (HEAD -> main, tag: v1.0.0) Record passing tests, static analysis and real demonstration outputs
+* 6d79b45 Add reproducible demonstration and exact console API reference
+* e7f9f2e Make audit failures return a nonzero console status and fix lint scope
+* 27698e1 Normalize Python formatting and remove unused imports
+* fb18ed2 Add Kazakh installation, usage and verification guide
+* 76ac6a5 Build wheel and sdist only after release tag validation
+* 727a06c Configure Python 3.11 and 3.12 automated quality checks
+*   47354e5 Merge configuration management plan
+|\  
+| * 392df2a (feature-scmp) Document baseline approval, change control and release responsibilities
+|/  
+*   d414cec Merge feature-release
+|\  
+| * a4706b6 (feature-release) Test releases normal, invalid and persistent scenarios
+| * bca5555 Expose releases actions through validated console interface
+|/  
+*   81211d9 Merge feature-semver
+|\  
+| * c7d7720 (feature-semver) Implement releases persistence and validation
+|/  
+* 449fea3 Initialize installable Python project and pinned tooling

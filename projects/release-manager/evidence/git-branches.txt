@@ -1,0 +1,4 @@
+  feature-release
+  feature-scmp
+  feature-semver
+* main
