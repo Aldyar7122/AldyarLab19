@@ -1,0 +1,8 @@
+  feature-baseline-history
+  feature-console
+  feature-projects
+  feature-release-registry
+  feature-release-reports
+  feature-request-history
+  feature-scmp
+* main
