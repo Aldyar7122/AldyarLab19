@@ -1,0 +1,10 @@
+{
+  "filter_commit": "90edae5af2770bc5e6b7766d7782b573507de77d",
+  "statistics_commit": "0bd0f36fa94a9fc32b0723abaf2e339238e3b33f",
+  "merge_commit": "0a6c00a2c95c4532d4c2ad29ef00114a785a27fc",
+  "resolution": [
+    "tasks",
+    "filter",
+    "statistics"
+  ]
+}

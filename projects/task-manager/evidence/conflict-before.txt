@@ -1,0 +1,6 @@
+def features():
+<<<<<<< HEAD
+    return ["tasks", "filter"]
+=======
+    return ["tasks", "statistics"]
+>>>>>>> feature-statistics
