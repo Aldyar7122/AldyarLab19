@@ -142,3 +142,11 @@ def test_release_list(app):
     app.baseline("BL-001", "P1", "Reviewer")
     app.release("P1", "1.0.0", "BL-001")
     assert app.list_releases("P1")[0]["version"] == "1.0.0"
+
+
+def test_baseline_delete_blocked(app):
+    app.baseline("BL-001", "P1", "Reviewer")
+    with pytest.raises(sqlite3.IntegrityError):
+        with app.db:
+            app.db.execute("DELETE FROM baselines WHERE id='BL-001'")
+    assert app.get_baseline("BL-001")["items"]
