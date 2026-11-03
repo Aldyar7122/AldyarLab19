@@ -17,14 +17,14 @@
       "sku": "NB-001",
       "kind": "receipt",
       "quantity": 20,
-      "date": "2026-11-03T14:38:29.561994+00:00"
+      "date": "2026-11-03T14:47:45.739155+00:00"
     },
     {
       "id": 2,
       "sku": "NB-001",
       "kind": "writeoff",
       "quantity": 7,
-      "date": "2026-11-03T14:38:29.561994+00:00"
+      "date": "2026-11-03T14:47:45.739155+00:00"
     }
   ],
   "rejected_writeoff": "insufficient stock"

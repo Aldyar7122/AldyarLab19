@@ -1,0 +1,2 @@
+No distribution build is invoked when the guard fails.
+Error: tag v9.9.9 differs from package version 1.0.0

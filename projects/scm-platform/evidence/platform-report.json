@@ -24,14 +24,14 @@
       "id": "CI-001",
       "version": "1.0",
       "sha256": "d287bb7f9d15abdc5b6e98536263815744b6ef21c8f3c839fc434ca70d8efe99",
-      "date": "2026-11-03T14:38:46.690327+00:00"
+      "date": "2026-11-03T14:47:46.442595+00:00"
     },
     {
       "project": "P1",
       "id": "CI-001",
       "version": "1.1",
       "sha256": "fc92339e2c864d8fc1782834ede5e96beb34e096745cdb559c3a8bb67fbfae7c",
-      "date": "2026-11-03T14:38:46.705948+00:00"
+      "date": "2026-11-03T14:47:46.489458+00:00"
     }
   ],
   "requests": [
@@ -45,7 +45,7 @@
       "status": "applied",
       "decision": "Tests and impact reviewed",
       "approver": "Reviewer",
-      "commit_hash": "20ecb4982bd77ed13ae30ece1cd3ff8a44f9552b",
+      "commit_hash": "16a7d128d9c9b518fc99bfda25c7bcc4c50c7d90",
       "test": "test_full_scenario"
     }
   ],
@@ -55,7 +55,7 @@
       "project": "P1",
       "previous": null,
       "approver": "Reviewer",
-      "date": "2026-11-03T14:38:46.690327+00:00",
+      "date": "2026-11-03T14:47:46.458216+00:00",
       "items": "[{\"project\": \"P1\", \"id\": \"CI-001\", \"path\": \"main.py\", \"version\": \"1.0\", \"sha256\": \"d287bb7f9d15abdc5b6e98536263815744b6ef21c8f3c839fc434ca70d8efe99\"}]"
     },
     {
@@ -63,7 +63,7 @@
       "project": "P1",
       "previous": "BL-001",
       "approver": "Reviewer",
-      "date": "2026-11-03T14:38:46.721570+00:00",
+      "date": "2026-11-03T14:47:46.489458+00:00",
       "items": "[{\"project\": \"P1\", \"id\": \"CI-001\", \"path\": \"main.py\", \"version\": \"1.1\", \"sha256\": \"fc92339e2c864d8fc1782834ede5e96beb34e096745cdb559c3a8bb67fbfae7c\"}]"
     }
   ],
@@ -72,7 +72,7 @@
       "project": "P1",
       "version": "1.0.0",
       "baseline": "BL-002",
-      "date": "2026-11-03T14:38:46.721570+00:00"
+      "date": "2026-11-03T14:47:46.505080+00:00"
     }
   ],
   "history": [
@@ -81,7 +81,7 @@
       "project": "P1",
       "event": "project_registered",
       "ref": "P1",
-      "date": "2026-11-03T14:38:46.674706+00:00",
+      "date": "2026-11-03T14:47:46.426975+00:00",
       "detail": ""
     },
     {
@@ -89,7 +89,7 @@
       "project": "P2",
       "event": "project_registered",
       "ref": "P2",
-      "date": "2026-11-03T14:38:46.674706+00:00",
+      "date": "2026-11-03T14:47:46.426975+00:00",
       "detail": ""
     },
     {
@@ -97,7 +97,7 @@
       "project": "P1",
       "event": "item_registered",
       "ref": "CI-001",
-      "date": "2026-11-03T14:38:46.690327+00:00",
+      "date": "2026-11-03T14:47:46.442595+00:00",
       "detail": ""
     },
     {
@@ -105,7 +105,7 @@
       "project": "P1",
       "event": "baseline_approved",
       "ref": "BL-001",
-      "date": "2026-11-03T14:38:46.690327+00:00",
+      "date": "2026-11-03T14:47:46.458216+00:00",
       "detail": ""
     },
     {
@@ -113,7 +113,7 @@
       "project": "P1",
       "event": "change_requested",
       "ref": "CR-001",
-      "date": "2026-11-03T14:38:46.705948+00:00",
+      "date": "2026-11-03T14:47:46.458216+00:00",
       "detail": ""
     },
     {
@@ -121,7 +121,7 @@
       "project": "P1",
       "event": "decision",
       "ref": "CR-001",
-      "date": "2026-11-03T14:38:46.705948+00:00",
+      "date": "2026-11-03T14:47:46.473837+00:00",
       "detail": "approved"
     },
     {
@@ -129,15 +129,15 @@
       "project": "P1",
       "event": "change_applied",
       "ref": "CR-001",
-      "date": "2026-11-03T14:38:46.705948+00:00",
-      "detail": "20ecb4982bd77ed13ae30ece1cd3ff8a44f9552b"
+      "date": "2026-11-03T14:47:46.489458+00:00",
+      "detail": "16a7d128d9c9b518fc99bfda25c7bcc4c50c7d90"
     },
     {
       "seq": 8,
       "project": "P1",
       "event": "baseline_approved",
       "ref": "BL-002",
-      "date": "2026-11-03T14:38:46.721570+00:00",
+      "date": "2026-11-03T14:47:46.489458+00:00",
       "detail": ""
     },
     {
@@ -145,7 +145,7 @@
       "project": "P1",
       "event": "release_registered",
       "ref": "1.0.0",
-      "date": "2026-11-03T14:38:46.721570+00:00",
+      "date": "2026-11-03T14:47:46.505080+00:00",
       "detail": "BL-002"
     }
   ]

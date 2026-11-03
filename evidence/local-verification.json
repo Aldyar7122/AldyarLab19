@@ -1,0 +1,78 @@
+{
+  "python": "3.12.14",
+  "total_tests": 134,
+  "projects": [
+    {
+      "number": 1,
+      "name": "file-version-manager",
+      "tests": 12,
+      "commits": 15,
+      "branches": 4,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\01-file-version-manager"
+    },
+    {
+      "number": 2,
+      "name": "change-tracker",
+      "tests": 9,
+      "commits": 15,
+      "branches": 4,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\02-change-tracker"
+    },
+    {
+      "number": 3,
+      "name": "configuration-scanner",
+      "tests": 13,
+      "commits": 15,
+      "branches": 4,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\03-configuration-scanner"
+    },
+    {
+      "number": 4,
+      "name": "task-manager",
+      "tests": 11,
+      "commits": 20,
+      "branches": 6,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\04-task-manager"
+    },
+    {
+      "number": 5,
+      "name": "warehouse-ci",
+      "tests": 16,
+      "commits": 16,
+      "branches": 4,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\05-warehouse-ci"
+    },
+    {
+      "number": 6,
+      "name": "release-manager",
+      "tests": 18,
+      "commits": 17,
+      "branches": 4,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\06-release-manager"
+    },
+    {
+      "number": 7,
+      "name": "configuration-auditor",
+      "tests": 16,
+      "commits": 16,
+      "branches": 4,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\07-configuration-auditor"
+    },
+    {
+      "number": 8,
+      "name": "scm-platform",
+      "tests": 25,
+      "commits": 25,
+      "branches": 8,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\08-scm-platform"
+    },
+    {
+      "number": 9,
+      "name": "scm-traceability",
+      "tests": 14,
+      "commits": 17,
+      "branches": 4,
+      "path": "C:\\Users\\User\\Desktop\\Практика_19_20\\09-scm-traceability"
+    }
+  ]
+}

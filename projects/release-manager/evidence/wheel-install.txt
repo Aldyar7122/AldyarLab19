@@ -1,0 +1,4 @@
+Processing C:\Users\User\Desktop\Практика_19_20\06-release-manager\dist\lab19_release_manager-1.0.0-py3-none-any.whl
+Installing collected packages: lab19-release-manager
+Successfully installed lab19-release-manager-1.0.0
+(1, 0, 0)

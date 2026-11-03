@@ -16,7 +16,8 @@ evidence.mkdir(exist_ok=True)
 hash = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=root, text=True).strip()
 def put_json(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding='utf-8')
-app = Tool(root)
+audit_root = Path(subprocess.check_output(['git', 'rev-parse', '--show-toplevel'], cwd=root, text=True).strip())
+app = Tool(audit_root)
 good = app.audit(output=evidence / 'compliant-audit')
 bad = data / 'noncompliant'
 bad.mkdir()

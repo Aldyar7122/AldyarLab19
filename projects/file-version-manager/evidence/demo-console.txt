@@ -1,22 +1,22 @@
 {
   "first": {
-    "id": "bff9f8f0cdec4d929cdfc50cca822e3a",
-    "time": "2026-11-03T14:38:19.143029+00:00",
+    "id": "99499644e92c4361ac02b8b0193d8261",
+    "time": "2026-11-03T14:47:44.958192+00:00",
     "content": "Git basics\nOld sentence\n"
   },
   "second": {
-    "id": "bf9d9b7833f84cc6866fe5eba15920d8",
-    "time": "2026-11-03T14:38:19.146022+00:00",
+    "id": "b9f08ee24c3f4246ba4aaddf88dcf52e",
+    "time": "2026-11-03T14:47:44.958192+00:00",
     "content": "Git basics\nNew sentence\nCI added\n"
   },
   "comparison": {
-    "diff": "--- bff9f8f0cdec4d929cdfc50cca822e3a\n+++ bf9d9b7833f84cc6866fe5eba15920d8\n@@ -1,2 +1,3 @@\n Git basics\n-Old sentence\n+New sentence\n+CI added"
+    "diff": "--- 99499644e92c4361ac02b8b0193d8261\n+++ b9f08ee24c3f4246ba4aaddf88dcf52e\n@@ -1,2 +1,3 @@\n Git basics\n-Old sentence\n+New sentence\n+CI added"
   },
   "restored": {
-    "id": "638886de7fb846f695bc829442eaccae",
-    "time": "2026-11-03T14:38:19.149072+00:00",
+    "id": "cdf4658c12d146afb17504f00c0ae603",
+    "time": "2026-11-03T14:47:44.958192+00:00",
     "content": "Git basics\nOld sentence\n",
-    "restored_from": "bff9f8f0cdec4d929cdfc50cca822e3a"
+    "restored_from": "99499644e92c4361ac02b8b0193d8261"
   },
   "history_length": 3
 }
