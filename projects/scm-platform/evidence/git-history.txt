@@ -1,0 +1,36 @@
+* f067ea2 (HEAD -> main, tag: v1.0.0) Record passing tests, static analysis and real demonstration outputs
+* 20ecb49 Add reproducible demonstration and exact console API reference
+* 33c8be4 Make audit failures return a nonzero console status and fix lint scope
+*   1ec7432 Merge feature-release-registry
+|\  
+| * 4b3754a (feature-release-registry) Expose registered releases per project
+|/  
+*   311ffc8 Merge feature-baseline-history
+|\  
+| * 2eb905e (feature-baseline-history) Expose project baseline history without mutation operations
+|/  
+*   474cf4f Merge feature-request-history
+|\  
+| * 00944f0 (feature-request-history) Expose complete request decision and application history
+|/  
+* 46449c1 Normalize Python formatting and remove unused imports
+* 7270882 Add Kazakh installation, usage and verification guide
+*   6670054 Merge release review checklist
+|\  
+| * 01979df (feature-release-reports) Add release and evidence review checklist
+|/  
+* c4c6f41 Configure Python 3.11 and 3.12 automated quality checks
+*   370396c Merge configuration management plan
+|\  
+| * 76dd150 (feature-scmp) Document baseline approval, change control and release responsibilities
+|/  
+*   97ea84d Merge feature-console
+|\  
+| * 5fc99bf (feature-console) Test platform normal, invalid and persistent scenarios
+| * 3a7e49b Expose platform actions through validated console interface
+|/  
+*   4ea9541 Merge feature-projects
+|\  
+| * 3d4d0fe (feature-projects) Implement platform persistence and validation
+|/  
+* 46b559f Initialize installable Python project and pinned tooling

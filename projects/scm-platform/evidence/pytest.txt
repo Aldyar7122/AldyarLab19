@@ -1,0 +1,31 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\User\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Практика_19_20\08-scm-platform
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 21 items
+
+tests/test_platform.py::test_project PASSED                              [  4%]
+tests/test_platform.py::test_duplicate_project PASSED                    [  9%]
+tests/test_platform.py::test_item_registration PASSED                    [ 14%]
+tests/test_platform.py::test_duplicate_item PASSED                       [ 19%]
+tests/test_platform.py::test_request PASSED                              [ 23%]
+tests/test_platform.py::test_unapproved_change PASSED                    [ 28%]
+tests/test_platform.py::test_approve PASSED                              [ 33%]
+tests/test_platform.py::test_reject PASSED                               [ 38%]
+tests/test_platform.py::test_apply_and_versions PASSED                   [ 42%]
+tests/test_platform.py::test_apply_twice PASSED                          [ 47%]
+tests/test_platform.py::test_baseline PASSED                             [ 52%]
+tests/test_platform.py::test_baseline_immutable PASSED                   [ 57%]
+tests/test_platform.py::test_baseline_compare PASSED                     [ 61%]
+tests/test_platform.py::test_release PASSED                              [ 66%]
+tests/test_platform.py::test_cross_project_release PASSED                [ 71%]
+tests/test_platform.py::test_history_and_report PASSED                   [ 76%]
+tests/test_platform.py::test_full_scenario PASSED                        [ 80%]
+tests/test_platform.py::test_restart PASSED                              [ 85%]
+tests/test_platform.py::test_request_history PASSED                      [ 90%]
+tests/test_platform.py::test_baseline_history PASSED                     [ 95%]
+tests/test_platform.py::test_release_list PASSED                         [100%]
+
+============================= 21 passed in 1.98s ==============================
