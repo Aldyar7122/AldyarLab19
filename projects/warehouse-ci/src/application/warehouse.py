@@ -2,7 +2,7 @@
 
 import sqlite3
 
-from .common import Database, now, positive, text
+from .common import Database, now, text
 
 
 class Warehouse(Database):
@@ -49,7 +49,6 @@ class Warehouse(Database):
         return row
 
     def move(self, sku, kind, quantity):
-        positive(quantity)
         if kind not in {"receipt", "writeoff"}:
             raise ValueError("operation must be receipt or writeoff")
         self.get(sku)
