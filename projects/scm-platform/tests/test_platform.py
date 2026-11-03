@@ -144,6 +144,19 @@ def test_release_list(app):
     assert app.list_releases("P1")[0]["version"] == "1.0.0"
 
 
+def test_decision_cannot_be_replaced(app):
+    request(app)
+    app.decide("CR-001", True, "Reviewer", "Approved")
+    with pytest.raises(ValueError):
+        app.decide("CR-001", False, "Other", "Replace approval")
+
+
+def test_duplicate_release_blocked(app):
+    app.baseline("BL-001", "P1", "Reviewer")
+    app.release("P1", "1.0.0", "BL-001")
+    with pytest.raises(ValueError):
+        app.release("P1", "1.0.0", "BL-001")
+
 def test_baseline_delete_blocked(app):
     app.baseline("BL-001", "P1", "Reviewer")
     with pytest.raises(sqlite3.IntegrityError):
