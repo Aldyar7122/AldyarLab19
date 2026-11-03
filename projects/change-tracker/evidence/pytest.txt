@@ -1,0 +1,19 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\User\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Практика_19_20\02-change-tracker
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 9 items
+
+tests/test_changes.py::test_add PASSED                                   [ 11%]
+tests/test_changes.py::test_duplicate PASSED                             [ 22%]
+tests/test_changes.py::test_invalid_status PASSED                        [ 33%]
+tests/test_changes.py::test_cannot_skip PASSED                           [ 44%]
+tests/test_changes.py::test_lifecycle PASSED                             [ 55%]
+tests/test_changes.py::test_filter PASSED                                [ 66%]
+tests/test_changes.py::test_report PASSED                                [ 77%]
+tests/test_changes.py::test_restart PASSED                               [ 88%]
+tests/test_changes.py::test_bad_commit PASSED                            [100%]
+
+============================== 9 passed in 0.34s ==============================
