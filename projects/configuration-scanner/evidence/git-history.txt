@@ -1,0 +1,19 @@
+* dd40d64 (HEAD -> main, tag: v1.0.0) Record passing tests, static analysis and real demonstration outputs
+* 9532b45 Add reproducible demonstration and exact console API reference
+* 6581d4c Make audit failures return a nonzero console status and fix lint scope
+* 1fa5d51 Normalize Python formatting and remove unused imports
+* e44af6c Add Kazakh installation, usage and verification guide
+*   5bba59e Merge configuration management plan
+|\  
+| * b8259e6 (feature-scmp) Document baseline approval, change control and release responsibilities
+|/  
+*   df157b0 Merge feature-diff
+|\  
+| * 9730917 (feature-diff) Test scanner normal, invalid and persistent scenarios
+| * 9004df1 Expose scanner actions through validated console interface
+|/  
+*   08d2ef0 Merge feature-scan
+|\  
+| * 27a7fad (feature-scan) Implement scanner persistence and validation
+|/  
+* 64bcb34 Initialize installable Python project and pinned tooling
