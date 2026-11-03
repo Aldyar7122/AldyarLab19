@@ -164,3 +164,11 @@ def test_content_hash_preserves_newlines(app):
     app.item("P1", "CI-002", "other.py", "1.0", "print(3)\n")
     item = [row for row in app.items("P1") if row["id"] == "CI-002"][0]
     assert item["sha256"] == hashlib.sha256(b"print(3)\n").hexdigest()
+
+
+def test_baseline_delete_blocked(app):
+    app.baseline("BL-001", "P1", "Reviewer")
+    with pytest.raises(sqlite3.IntegrityError):
+        with app.db:
+            app.db.execute("DELETE FROM baselines WHERE id='BL-001'")
+    assert app.get_baseline("BL-001")["items"]
