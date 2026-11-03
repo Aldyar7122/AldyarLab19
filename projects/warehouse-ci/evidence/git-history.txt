@@ -1,0 +1,20 @@
+* f05170d (HEAD -> main, tag: v1.0.0) Record passing tests, static analysis and real demonstration outputs
+* 1d493e7 Add reproducible demonstration and exact console API reference
+* bd2ccd8 Make audit failures return a nonzero console status and fix lint scope
+* 719d189 Normalize Python formatting and remove unused imports
+* e3f85f2 Add Kazakh installation, usage and verification guide
+* 1311ded Configure Python 3.11 and 3.12 automated quality checks
+*   cffd2a8 Merge configuration management plan
+|\  
+| * 28bbc73 (feature-scmp) Document baseline approval, change control and release responsibilities
+|/  
+*   e9a9a1c Merge feature-ci
+|\  
+| * b554666 (feature-ci) Test warehouse normal, invalid and persistent scenarios
+| * 5bcdfc1 Expose warehouse actions through validated console interface
+|/  
+*   bc6c3d6 Merge feature-stock
+|\  
+| * b7dede5 (feature-stock) Implement warehouse persistence and validation
+|/  
+* c250b67 Initialize installable Python project and pinned tooling
