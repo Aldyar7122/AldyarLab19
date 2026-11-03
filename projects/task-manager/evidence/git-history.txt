@@ -1,0 +1,29 @@
+* 1528ecf (HEAD -> main, tag: v1.0.0) Record passing tests, static analysis and real demonstration outputs
+* 31c6165 Add reproducible demonstration and exact console API reference
+* 09092ce Make audit failures return a nonzero console status and fix lint scope
+* 624a29f Normalize Python formatting and remove unused imports
+* ae2e1f6 Add Kazakh installation, usage and verification guide
+*   8adb288 Merge configuration management plan
+|\  
+| * bae2201 (feature-scmp) Document baseline approval, change control and release responsibilities
+|/  
+*   0d0495f Merge feature-console
+|\  
+| * b66fa3c (feature-console) Test tasks normal, invalid and persistent scenarios
+| * bcaf1f9 Expose tasks actions through validated console interface
+|/  
+*   0a6c00a Resolve registry conflict preserving filtering and statistics
+|\  
+| * 0bd0f36 (feature-statistics) Register task statistics independently
+* |   d42d035 Merge task filtering
+|\ \  
+| |/  
+|/|   
+| * 90edae5 (feature-filter) Register task filtering in feature registry
+|/  
+* c7896a9 Add shared feature registry for controlled merge exercise
+*   47f2429 Merge feature-tasks
+|\  
+| * ed5a928 (feature-tasks) Implement tasks persistence and validation
+|/  
+* 360bfeb Initialize installable Python project and pinned tooling

@@ -1,0 +1,21 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\User\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Практика_19_20\04-task-manager
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 11 items
+
+tests/test_tasks.py::test_create_read PASSED                             [  9%]
+tests/test_tasks.py::test_update PASSED                                  [ 18%]
+tests/test_tasks.py::test_delete PASSED                                  [ 27%]
+tests/test_tasks.py::test_three_filters PASSED                           [ 36%]
+tests/test_tasks.py::test_statistics PASSED                              [ 45%]
+tests/test_tasks.py::test_empty_statistics PASSED                        [ 54%]
+tests/test_tasks.py::test_validation[kwargs0] PASSED                     [ 63%]
+tests/test_tasks.py::test_validation[kwargs1] PASSED                     [ 72%]
+tests/test_tasks.py::test_validation[kwargs2] PASSED                     [ 81%]
+tests/test_tasks.py::test_restart PASSED                                 [ 90%]
+tests/test_tasks.py::test_merge_preserves_functions PASSED               [100%]
+
+============================= 11 passed in 0.28s ==============================
