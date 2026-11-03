@@ -1,0 +1,19 @@
+* 2d00df9 (HEAD -> main, tag: v1.0.0) Record passing tests, static analysis and real demonstration outputs
+* 1fca44c Add reproducible demonstration and exact console API reference
+* a1450e2 Make audit failures return a nonzero console status and fix lint scope
+* b7ddd95 Normalize Python formatting and remove unused imports
+* 7551f70 Add Kazakh installation, usage and verification guide
+*   41170a4 Merge configuration management plan
+|\  
+| * 000da82 (feature-scmp) Document baseline approval, change control and release responsibilities
+|/  
+*   dc518e9 Merge feature-compare
+|\  
+| * 35cb5a4 (feature-compare) Test versions normal, invalid and persistent scenarios
+| * 5cad5ad Expose versions actions through validated console interface
+|/  
+*   5a378c4 Merge feature-versions
+|\  
+| * 689671f (feature-versions) Implement versions persistence and validation
+|/  
+* 9e2d8c9 Initialize installable Python project and pinned tooling
